@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: beige;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        /* comentário */
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Não acredito em superstições.</p> <!-- comentário -->
+
+    <script>
+        var n1 = Number(window.prompt('Digite um número decimal: ')) // conversão de tipo de dados
+        var n2 = Number.parseInt(window.prompt('Digite um número inteiro: ')) // conversão forçada de tipo de dados
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // template string
+        // window.alert('A soma dos valores é: ' + String(s)) 
+    </script>
+</body>
+</html>
