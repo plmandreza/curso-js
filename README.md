@@ -80,3 +80,73 @@ Formatando números: n1.toFixed(2) fixo com 2 casas -> método interno
 n1.toFixed(2).replace('.', ',') troca ponto por vírgula
 
 n1.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) -> string localizada / { } objeto -> ex.: 'R$ 1.545,50'
+
+<h2>Aula 07</h2>
+Operadores: aritméticos, atribuição, relacionais, lógicos, ternário...
+
+ex.: typeof n
+
+Aritméticos -> cálculos -> +, -, *, /, % resto da divisão inteira, ** potência -> binários
+
+Precedência de operadores -> ex.: em 5 + 3 / 2, a divisão será feita antes da soma, o resultado será 6.5. (5 + 3) / 2 é 4
+
+Ordem de precedência: ( ) -> ** -> * / % (a prioridade é do que vier primeiro) -> + -
+
+A linguagem só dá erro quando for erro sintático (sintax error)
+
+Atribuição -> simples: = (recebe valores)
+
+<strong>n</strong> = <strong>n</strong> + 4 -> <strong>n</strong> += 4 (autorreferência) -> simplificador
+
+-=, *=, /=...
+
+Incremento -> ++, -- (+=, -=) -> simplificador
+
+Pré-incremento -> ++n (soma antes, o padrão é depois)
+
+<h2>Aula 08</h2>
+ Relacionais -> >, <, >=, <=, ==, != -> o resultado será sempre verdadeiro ou falso (booleano) -> não tem uma ordem, é o que vier primeiro
+
+ 5 == 5 -> true e 5 == '5' -> true
+
+ Identidade (igualdade restrita): === (mesmo valor e mesmo tipo), !==...
+
+ 5 === '5' -> false
+ 
+ Lógicos -> ! negação (operador unário -> um operando -> true / false), && conjunção E (operador binário -> 2 valores lógicos), | | disjunção OU (operador binário -> 2 valores lógicos)
+
+ Ordem de execução dos oper. lógicos: NÃO -> E -> OU
+
+ true && true -> true
+
+ true && false -> false
+
+ false && false -> false
+
+ false && true -> false
+
+ false && false -> false
+
+
+
+ true | | true -> true
+
+ true | | false -> true
+
+ false | | true -> true
+
+ false | | false -> false
+
+ a > b && b % 2 == 0
+ -> false  AND true == false
+
+ Ordem de precedência: Aritméticos -> Relacionais -> Lógicos
+
+ Ternários -> ? e : dentro de uma mesma expressão
+
+ 3 blocos/operandos -> teste ? true : false (sem espaços)
+ 
+ teste ? true (o que vai acontecer se o teste lógico for verdadeiro) : false (o que vai acontecer se o teste lógico for falso)
+
+
+ex.: média >= 7.0 ?'Aprovado':'Reprovado'
