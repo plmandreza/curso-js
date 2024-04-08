@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(151, 236, 255);
+            color: #000;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg" >Clique em mim</div>
+    <!-- class="msg" name="msg" -->
+    <script>
+        // window.document.write(window.document.charset)
+        // window.document.write(window.navigator.appName)
+        // window.document.write(window.document.URL)
+       
+        //  var corpo = document.body
+        //var p1 = document.getElementsByTagName('p')[1] // primeiro parágrafo - acesso pelo componente
+        // corpo.style.background = 'beige'
+        // p1.style.color = 'blue'
+        // document.write(p1.innerText) // texto sem formatação
+        // document.write(p1.innerHTML) // inclui tags filhas
+        // document.write('Está escrito assim: ' + p1.innerText)
+    
+        /* var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...' // simplificada
+        window.document.getElementById('msg').innerText = 'olá' // longa */
+
+        // var d = window.document.getElementsByName('msg')[0]
+        // d.innerText = 'olá'
+
+        var d =  window.document.querySelector('div#msg') // div é representada por # "hashtag" no CSS, class é . "ponto"
+        // var d =  window.document.querySelector('div.msg') // classe
+        d.style.background = 'blue'
+    </script>
+</body>
+</html>

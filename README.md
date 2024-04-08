@@ -142,11 +142,69 @@ Pré-incremento -> ++n (soma antes, o padrão é depois)
 
  Ordem de precedência: Aritméticos -> Relacionais -> Lógicos
 
- Ternários -> ? e : dentro de uma mesma expressão
+ Ternários -> ? e : dentro de uma mesma expressão. é sempre o último na ordem.
 
- 3 blocos/operandos -> teste ? true : false (sem espaços)
+ 3 blocos/operandos -> teste ? true : false
  
  teste ? true (o que vai acontecer se o teste lógico for verdadeiro) : false (o que vai acontecer se o teste lógico for falso)
 
 
-ex.: média >= 7.0 ?'Aprovado':'Reprovado'
+ex.: média >= 7.0 ? 'Aprovado' : 'Reprovado'
+
+Atalhos: setas cima/baixo navegam/repetem as linhas de comando 
+
+ex.: var idade = 19
+
+var r = idade >= 18 ? 'MAIOR' : 'MENOR' -> true ('MAIOR')
+
+<h2>Aula 09</h2>
+
+DOM - Documento Object Model -> vertente web do js, ferramenta dentro do navegador, conjunto de objetos do js no tratamento de componentes visuais.
+Conjunto de objetos dentro do navegador que dá acesso aos componentes internos do website (não funciona dentro do NodeJS).
+
+Árvore DOM - estrutura 
+
+raiz: window (objeto onde fica tudo dentro do js)
+
+-> location: url, qual a pág. atual/anterior...
+
+-> document (parent): documento atual -> html (child) (parent) --> head (child) ---> meta e title --> body (child) ---> h1, p, p (----> strong), div
+
+-> history: guarda de onde veio e aonde vai...
+
+são ELEMENTOS (parent/child)
+
+Métodos de acesso: 1. por Marca (Tag) document.getElementsByTagName( ) - para muitos objetos; 2. por ID document.getElementById( ) - para um objeto; 3. por Nome document.getElementsByName( ) - para muitos objetos; 4. por Classe document.getElementsByClassName( ); 5. por Seletor (CSS) querySelector( ) querySelectorAll( ) - plural.
+
+<h2>Aula 10</h2>
+
+Eventos DOM: tudo o que pode acontecer com o elemento; mais comuns -> eventos de mouse ex.: mouseenter, mousemove, mousedown, mouseup, click, mouseout...
+
+javascript dom events list https://yari-demos.prod.mdn.mozit.cloud/pt-BR/docs/Web/Events
+
+touch events -> touchscreen
+
+"disparar"
+
+Funções: conjunto de linhas/códigos que vão ser executadas só quando o evento ocorres. 
+
+linhas ->  bloco
+function ação(parâmetros){ 
+    bloco
+}
+
+"function" nomeia
+
+Eventos podem ser configurados diretamente no HTML ou no script.
+
+Listeners -> também dispara eventos -> usado para simplificar -> ligação entre HTML e JS. Ex.: area.addEventListener('click', clicar)
+
+Detecção de erros: botão direito -> Inspecionar (devtools) ->  x (em vermelho) erro
+
+
+
+
+
+
+
+
