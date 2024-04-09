@@ -201,7 +201,30 @@ Listeners -> também dispara eventos -> usado para simplificar -> ligação entr
 
 Detecção de erros: botão direito -> Inspecionar (devtools) ->  x (em vermelho) erro
 
+<h2>Aula 11</h2>
 
+Condições
+
+Bifurcações
+
+Desvio condicional
+
+if -> losango
+
+Tipos de condição:
+if (condição) {
+    true
+} -> condição simples
+
+if (condição) {
+    true -> bloco
+} else {
+    false
+} 
+
+Extensão NODE EXEC (foguete verde/miramac) -> atalho f8 para executar node js no vscode
+
+Indentação (recuo/4 espaços ou tab) -> organização do código
 
 
 
