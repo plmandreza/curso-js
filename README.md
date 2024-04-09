@@ -220,14 +220,75 @@ if (condição) {
     true -> bloco
 } else {
     false
-} 
+}  -> condição composta
 
 Extensão NODE EXEC (foguete verde/miramac) -> atalho f8 para executar node js no vscode
 
 Indentação (recuo/4 espaços ou tab) -> organização do código
 
+<h2>Aula 12</h2>
 
+Condições Aninhadas: if..elseif..else (uma condição dentro da outra)
 
+Ex.: if (cond1) {
+    bloco1
+} else {
+    if (cond2) { // níveis
+        bloco2
+    } else {
+        bloco3
+    }
+}
+
+Node Exec -> selecionar uma parte do código e apertar f8 executa só o trecho selecionado
+
+horário -> var agora = new Date()
+var hora = agora.getHours()
+
+Condição Múltipla: serve para valores fixos, aceita valores além de 'sim' e 'não'. A expressão testa vários valores e depois retorna ao fluxo do programa.
+
+switch (expressão) { // bloco relacionado
+    case valor1:
+    //comandos
+    break
+    case valor2:
+    //comandos
+    break
+    case valor3:
+    //comandos
+    break
+    default: // padrão, como se fosse o 'else'
+    //comandos
+    break
+}
+
+dentro de cada bloco, temos que colocar o comando 'break' -> OBRIGATÓRIO
+
+para não executar todos os comandos até achar um 'break'; quando estiver satisfeito, ele já irá parar
+
+<h2>Aula 12 ex</h2>
+
+Atalho para criar CSS dentro do HTML com VS:
+<  link rel="stylesheet" href="estilo.css"  >
+clicar em "estilo.css" segurando o ctrl -> Create File
+
+File -> Save All (ctrl + K S)
+
+Extensão para ver no navegador -> Live Server
+Ritwick Dey
+
+barra do lado esquerdo da cor rgba -> transparência
+
+script:src -> em arquivos separados (externo)
+clicar em "script.js" segurando o ctrl -> Create File
+
+msg.innerHTML - > substitui texto
+
+PS -> Save for Web -> PNG-24
+
+F2 no vscode -> 'Rename'
+
+Em input:radio, "name" tem que ser igual nas opções; porém, não podem ser selecionados por id ou selector no script.
 
 
 
