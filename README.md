@@ -290,5 +290,62 @@ F2 no vscode -> 'Rename'
 
 Em input:radio, "name" tem que ser igual nas opções; porém, não podem ser selecionados por id ou selector no script.
 
+<h2>Aula 13</h2>
 
+Estruturas de controle: sequências, condições (losango -> if/else if/ else), repetições(laços -> faz um loop ao invês de ir ao final enquanto WHILE a condição for verdadeira, só finaliza quando for falsa) do..while
 
+while (condicao) {
+    bloco
+} -> WHILE: estrutura de repetição com teste lógico no início
+
+function comerPizza() {
+        comerFatia()
+        comerFatia()
+        comerFatia()
+        comerFatia()
+        comerFatia()
+        comerFatia()
+        comerFatia()
+        comerFatia()
+} //sem while
+
+function comerPizza() {
+    while (temFatia()) {
+        comerFatia()
+    }
+}
+
+Pode fazer o teste e depois executar o bloco, ou pode executar o bloco e só depois fazer o teste.
+
+do {
+    bloco
+    while(condicao)
+} -> DO..WHILE: estrutura de repetição com teste lógico no final
+
+<h2>Aula 14</h2>
+
+Estrutura de repetição com variável de controle FOR -> exágono irregular (inicialização e teste lógico, depois executa o bloco, faz o loop e teste lógico de novo, volta e incrementa para fazer o teste lógico novamente, falso encerra)
+
+for (inicio; teste; incr) {
+    bloco
+}
+
+WHILE
+var c = 1 
+while (c <= 10) {
+    bloco
+    c++
+}
+
+FOR
+for (var c=1;c<=10;c++) {
+    bloco
+}
+
+MODO DE DEPURAÇÃO 
+
+Run -> Start Debugging
+
+bolinha vermelha nas linhas, lado esquerdo -> break point
+
+WATCH -> monitorar uma expressão
