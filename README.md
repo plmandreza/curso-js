@@ -349,3 +349,5 @@ Run -> Start Debugging
 bolinha vermelha nas linhas, lado esquerdo -> break point
 
 WATCH -> monitorar uma expressão
+
+Emoji: U+1F970 -> `/u{1F970}` em js
