@@ -7,9 +7,9 @@ function tabuada() {
     } else {
         let n = Number(num.value)  
         let c =  1
-        tab.innerHTML = ``
+        tab.innerHTML = `` // limpa a tabuada
         while (c <= 10) {
-            let item = document.createElement('option')
+            let item = document.createElement('option') // cria as options no select dinamicamente
             item.text = `${n} x ${c} = ${n*c}` //template string
             item.value = `tab${c}` //para outras linguagens, para saber qual item foi selecionado
             tab.appendChild(item)

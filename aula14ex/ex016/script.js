@@ -18,12 +18,12 @@ function contar() {
         }
         if (i < f) {
             // Contagem crescente
-            for (let c = 1; c <= f; c += p) { // c+ ele mesmo e o passo
+            for (let c = 1; c <= f; c += p) { // c + ele mesmo e o passo
                 res.innerHTML += ` ${c} \u{1F449}`
             }
         } else {
             // Contagem regressiva
-            for (let c = i; c>= f; c -= p) {
+            for (let c = i; c >= f; c -= p) {
                 res.innerHTML += ` ${c} \u{1F449}`
             }
         }

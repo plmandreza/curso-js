@@ -351,3 +351,78 @@ bolinha vermelha nas linhas, lado esquerdo -> break point
 WATCH -> monitorar uma expressão
 
 Emoji: U+1F970 -> `/u{1F970}` em js
+
+"Em HTML, document.body.appendChild(msg) é uma instrução em JavaScript que adiciona um elemento msg como filho do elemento <body> do documento atual. Isso significa que o elemento msg será inserido no final do conteúdo da página, logo antes do fechamento da tag </body>."
+
+log.appendChild(pre), isso se refere a um método de adicionar um elemento pre como filho de um elemento log em JavaScript.
+
++= -> Para números: Se ambos os operandos forem números, o += é usado para adicionar o valor do operando à direita ao valor do operando à esquerda e atribuir o resultado à variável à esquerda. 
+Para strings: Se pelo menos um dos operandos for uma string, o += é usado para concatenar a string à direita à string à esquerda. 
+
+<h2>Aula 15</h2>
+
+Variáveis Simples -> Armazenam um valor por vez
+
+Variáveis Compostas (Vetor/Array) -> Armazenam vários valores em uma mesma estrutura
+
+Cada um recebe índice/chave -> posição dentro do vetor
+
+Ex.: vaga a *array/vetor* = ["carro1", "carro2", "carro3 *conteúdo/valor*" *elementos*]
+
+carro1 -> [0] *índice/chave*
+carro2 -> [1]
+carro3 -> [2]
+
+Cada elemento é composto por seu valor e uma chave de identificação
+
+Ex. 2: let num = [ , , ]
+
+num 
+
+[0] 5
+
+[1] 8
+ 
+[2] 4
+
+-> vetor de 3 elementos (0, 1 e 2), quem tem os valores 5, 8 e 4
+
+Para acrescentar a vaga 3/mais um espaço/valores ao array, basta adicionar:
+
+num[3] = 6
+
+Comando "push" não especifica a posição:
+
+num.push(7)
+
+Comando "length" é utilizado para saber o comprimento:
+
+num.length -> sem parênteses no JS -> é um atributo -> resposta == 5 elementos
+
+Método interno "sort" coloca os elementos em ordem crescente:
+
+num.sort()
+
+Estrutura de repetição "for" tem 3 elementos -> inicialização, teste lógico e incremento
+
+Código tradicional do percurso em vetores (percurso para exibição no vetor):
+for(let pos=0; pos<num.length; pos++){
+    console.log(num[pos])
+}
+
+JS, a partir das versões mais recentes do ECMAScript, simplificou:
+for(  in  ) {
+
+}
+*É otimizado para variáveis compostas e objetos*
+
+for(let post in num) { //para cada posição em/dentro de num, mostre num[pos]
+    console.log(num[pos])
+}
+
+Todo array em JS é um object
+
+Buscar valores dentro de um vetor:
+num.indexOf(7) -> procura onde está o valor 7
+num.indexOf(3) -> retorna -1 porque não há valor 3 no array
+retorna a chave/index 3 para num 4, 5, 6, 7, 8
